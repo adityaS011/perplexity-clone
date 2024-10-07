@@ -1,9 +1,6 @@
-<img src="https://github.com/darsaveli/Mariam/blob/main/1479814528_webarebears.gif" width="385px" align="center">
-<!-- Replace with your React project screenshot or use this as a placeholder -->
-<img src="https://via.placeholder.com/1000x400.png?text=React+Project+Screenshot" alt="Project Screenshot" style="width: 100%; border-radius: 10px; margin-bottom: 20px;" />
 
 <h1 align="center" style="font-size: 3rem; font-weight: bold; margin-bottom: 1.5rem;">
-    🚀 Welcome to My React Project!
+    🚀 Welcome to Perplexity Ai Front-end Clone!
 </h1>
 
 <p align="center" style="font-size: 1.25rem;">
