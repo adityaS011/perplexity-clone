@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {
   CollapseIcon,
   DiscordIcon,
@@ -13,24 +14,38 @@ import LearnMoreButton from './buttons/LearnMoreButton';
 import NewThreadButton from './buttons/NewThreadButton';
 import SignUpButton from './buttons/SignUpButton';
 
-const Sidebar = () => {
+const Sidebar = ({
+  setCollapseSidebar,
+}: {
+  setCollapseSidebar: (val: boolean) => void;
+}) => {
+  const navigate = useNavigate();
   return (
     <div className='flex flex-col gap-6 h-full font-sans '>
       <div className='flex flex-row justify-between gap-3 px-2 mt-4 '>
         <LogoIcon className='w-28 md:w-[200px] h-full pl-1' />
-        <div className='hover:bg-[#2d3030] text-gray-400 hover:text-white rounded-full p-3'>
+        <div
+          className='hover:bg-[#2d3030] text-gray-400 hover:text-white rounded-full p-3 '
+          onClick={() => setCollapseSidebar(true)}
+        >
           <CollapseIcon className='  w-3 h-auto ' />
         </div>
       </div>
       <div className='px-4 w-full'>
         <NewThreadButton />
       </div>
-      <div className='flex flex-col justify-center font-medium space-y-1 pl-1 pr-4'>
+      <div
+        className='flex flex-col justify-center font-medium space-y-1 pl-1 pr-4'
+        onClick={() => navigate('/')}
+      >
         <div className='text-gray-400 hover:text-gray-200  hover:bg-[#353636] py-2 px-4 rounded cursor-pointer  flex flex-row gap-2 items-center'>
           <SearchIcon className='h-4 w-4' />
           <p>Home</p>
         </div>
-        <div className='text-gray-400 hover:text-gray-200 hover:bg-[#353636] py-2 px-4 rounded cursor-pointer  flex flex-row gap-1 items-center'>
+        <div
+          className='text-gray-400 hover:text-gray-200 hover:bg-[#353636] py-2 px-4 rounded cursor-pointer  flex flex-row gap-1 items-center'
+          onClick={() => navigate('/discover/:id')}
+        >
           <GlobeIcon className='h-5 w-5' />
           <p>Discover</p>
         </div>
