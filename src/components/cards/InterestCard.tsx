@@ -1,11 +1,9 @@
-import React from 'react';
 import {
   AIIcon,
   ArtsIcon,
   EntertainmentIcon,
   FinanceIcon,
   SportsIcon,
-  StartIcon,
 } from '../../icons';
 import SignUpButton from '../buttons/SignUpButton';
 
