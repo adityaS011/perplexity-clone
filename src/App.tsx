@@ -8,10 +8,9 @@ const App = () => {
   const [collapseSidebar, setCollapseSidebar] = useState(false);
   return (
     <div className='bg-[#202323] w-full h-screen flex overflow-hidden'>
-      {/* Sidebar with fixed height */}
       <div
-        className={`w-[220px] h-screen hidden md:${
-          collapseSidebar ? 'hidden' : 'block'
+        className={`w-[220px] h-screen hidden  ${
+          collapseSidebar ? 'hidden' : 'md:block'
         }`}
       >
         <Sidebar setCollapseSidebar={setCollapseSidebar} />
