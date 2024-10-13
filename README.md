@@ -21,11 +21,11 @@
 
 ---
 
-// <h2 style="font-size: 2rem; font-weight: bold; margin-top: 2rem;">📸 Project Preview</h2>
-// <p>Here’s a sneak peek at this amazing React project:</p>
+<!---  <h2 style="font-size: 2rem; font-weight: bold; margin-top: 2rem;">📸 Project Preview</h2>
+<p>Here’s a sneak peek at this amazing React project:</p>
 
-// <img src="https://via.placeholder.com/800x400.png?text=Awesome+React+App" alt="Project Preview" style="width: 100%; border-radius: 10px; margin: 20px 0;" />
-
+ <img src="https://via.placeholder.com/800x400.png?text=Awesome+React+App" alt="Project Preview" style="width: 100%; border-radius: 10px; margin: 20px 0;" />
+--->
 ---
 
 <h2 style="font-size: 2rem; font-weight: bold; margin-top: 2rem;">🔍 About the Project</h2>
